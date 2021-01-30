@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/usr/bin/bash
 
-sudo apt purge rhythmbox celluloid thunderbird transmission hexchat
+sudo apt purge rhythmbox celluloid thunderbird transmission* hexchat
 sudo apt autoremove
 
 #Install Enpass
@@ -13,4 +13,4 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 
 sudo apt update
 
-sudo apt install guake vlc nodejs npm git enpass spotify-client
+sudo apt install vlc nodejs npm git enpass spotify-client nemo-image-converter gimp hypnotix remmina
