@@ -11,6 +11,9 @@ wget -O - https://apt.enpass.io/keys/enpass-linux.key | sudo apt-key add -
 wget -O - https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add -
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 
+# Install Latest Inkscape
+sudo add-apt-repository ppa:inkscape.dev/stable
+
 sudo apt update
 
-sudo apt install vlc nodejs npm git enpass spotify-client nemo-image-converter gimp hypnotix remmina
+sudo apt install vlc git enpass spotify-client nemo-image-converter gimp hypnotix remmina inkscape
